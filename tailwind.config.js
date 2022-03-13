@@ -1,5 +1,9 @@
 module.exports = {
-  content: ["./public/index.html", "./src/**/*.{html,js}"],
+  content: ["./public/index.html", "./public/**/*.{html,js}"],
+  purge: [
+    './public/**/*.html',
+    './public/**/*.js',
+  ],
   darkMode: 'class',
   theme: {
     extend: {
