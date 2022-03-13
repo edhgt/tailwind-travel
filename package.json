@@ -18,6 +18,9 @@
   },
   "homepage": "https://github.com/edhernandez7/tailwind-travel#readme",
   "description": "",
+  "dependencies": {
+    "tailwind-scrollbar-hide": "1.1.7"
+  },
   "devDependencies": {
     "autoprefixer": "^10.4.2",
     "postcss": "^8.4.8",
