@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.Card {
+    @apply w-48 h-64 shadow-md rounded-lg
+}
+
+.Card-Header {
+    @apply w-full h-3/5 rounded-t-lg bg-norway bg-cover    
+}
+
+.Card-Body {
+    @apply w-full h-2/5 bg-secondary rounded-b-lg
+}
