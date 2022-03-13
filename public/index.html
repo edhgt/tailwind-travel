@@ -10,15 +10,15 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
   <title>Tailwind Travel</title>
 </head>
-<body>
+<body class="font-Montserrat">
   <nav></nav>
   <div id="tab_bar"></div>
   <section class="w-full h-screen">
       <div id="home">
         <div class="w-full h-3/4">
           <div class="w-full h-full flex flex-col absolute space-y-96 py-4 items-center">
-            <input class="outline-none p-3 rounded-full shadow-sm " id="" name="" type="search" placeholder="San Francisco">
-            <button class="w-36 rounded-full text-xl text-primary shadow-sm front-semibold p-4 text-principal bg-white">Explorar</button>
+            <input class="outline-none p-3 rounded-full shadow-sm transition duration-300 focus-within:shadow-sm focus:ring-3 focus:w-11/12" id="" name="" type="search" placeholder="San Francisco">
+            <button class="w-48 rounded-full text-lg text-primary shadow-sm front-semibold p-4 text-principal bg-white transition transition-all duration-500 easy-in-out hover:bg-primary hover:text-white transform hover:translate-y-1 hover:scale-110">Explorar</button>
           </div>
           <div class="w-full h-full">
             <img src="https://raw.githubusercontent.com/platzi/PlatziTravel/main/public/img/sanFrancisco.jpg" alt="San Francisco">
@@ -27,7 +27,7 @@
       </div>
       <div class="p-6" id="recomendados">
         <p class="text-3xl font-semibold text-primary">Recomendados</p>
-        <div class="w-auto h-72 item-center mt-6 overflow-x-auto overscroll-x-contain flex space-x-6">
+        <div class="w-auto h-72 item-center mt-6 overflow-x-auto overscroll-x-contain flex space-x-6 overflow-y-hidden">
           <div class="Card">
             <div class="Card--cover bg-norway"></div>
             <div class="Card--info">
