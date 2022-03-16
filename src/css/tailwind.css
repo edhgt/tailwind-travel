@@ -22,7 +22,7 @@
 }
 .Card:nth-child(even) .Card--info__title,
 .Card:nth-child(even) .Card--info__subtitle {
-  @apply text-tertiary;
+  @apply text-terciary;
 }
 
 .CardTitle {
