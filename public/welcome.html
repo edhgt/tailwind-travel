@@ -12,11 +12,10 @@
         <div class="container py-4 px-4 flex flex-col gap-5 px-10 lg:flex-row place-content-between bg-slate-800 lg:rounded-lg lg:mx-2 lg:mt-4 items-center dark:bg-gray-900">
             <router-link exact id="logo" :to="{ name: 'welcome' }">
                 <h1 class="text-white text-xl font-bold">
-                    Logo
+                    MINECO
                 </h1>
             </router-link>
-            <nav class="fixed bottom-0 z-50 flex justify-center w-full gap-6 p-2 bg-gray-100 sm:p-0 dark:bg-gray-900 sm:bg-transparent sm:static sm:w-auto">
-				<a class="sm:hover:ring-2 ring-gray-900 dark:ring-yellow-300 w-1/4 sm:w-auto p-2 rounded-lg flex text-xs sm:text-base flex-col sm:flex-row items-center gap-1 hover:text-gray-900 transition dark:hover:text-yellow-300 pointer-events-none text-gray-900 dark:text-yellow-300" href="/challenges"><svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"></path></svg>Retos</a>
+            <nav class="fixed bottom-0 z-50 flex justify-center w-full gap-6 p-2 bg-slate-800 sm:p-0 dark:bg-gray-900 sm:bg-transparent sm:static sm:w-auto">
                 <router-link exact class="text-white w-1/4 sm:w-auto p-2 rounded-lg flex text-xs sm:text-base flex-col sm:flex-row items-center gap-1 hover:text-lemon transition dark:hover:text-lemon" :to="{ name: 'about' }">
                     <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"></path></svg>
                     About
@@ -31,7 +30,7 @@
             </button>
         </div>
     </header>
-	<main class="container pt-24 md:pt-36 mx-auto flex flex-wrap flex-col md:flex-row items-center dark:text-white">
+	<div class="container pt-24 md:pt-36 mx-auto flex flex-wrap flex-col md:flex-row items-center dark:text-white">
 		<div class="flex flex-col w-full xl:w-2/5 justify-center lg:items-start overflow-y-hidden">
 			<h1 class="my-4 text-5xl md:text-5xl font-extrabold leading-tight text-center md:text-left">
 				{{ $root.title }}
@@ -47,9 +46,9 @@
 			</div>
 		</div>
 		<div class="w-full xl:w-3/5 p-12 overflow-hidden">
-			<img class="mx-auto w-full md:w-3/5 transition hover:scale-105 duration-700 ease-in-out" src="https://raw.githubusercontent.com/platzi/PlatziTravel/main/public/img/sanFrancisco.jpg" />
+			<img class="mx-auto w-full md:w-3/5 transition hover:scale-105 duration-700 ease-in-out" src="../assets/welcome.svg" />
 		</div>
-	</main>
+	</div>
 	<script>
 		const htmlElement = document.querySelector("html")
 		const toggleButton = document.querySelector("#toggle")
